@@ -9,20 +9,21 @@ import "./MainNav.scss";
 const MainNav = () => {
   return (
     <>
+      {/* Set to adjust nav collapse breakpoint */}
       {["sm"].map((expand) => (
         <Navbar key={expand} expand={expand} sticky="top" className="mt-0 mb-3">
           <Container fluid>
-            <div class="d-flex align-items-center">
-              <Navbar.Brand href="#home">
+            <div className="d-flex align-items-center">
+              <Navbar.Brand href="/">
                 <img
                   src={logo}
                   width="50"
                   height="50"
                   className="d-inline-block align-top"
-                  alt="React Bootstrap logo"
+                  alt="Holt's Code Logo"
                 />
               </Navbar.Brand>
-              <a href="#home" class="logo-title">
+              <a href="/" className="logo-title">
                 Holt's Code
               </a>
             </div>
@@ -39,9 +40,9 @@ const MainNav = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Projects</Nav.Link>
-                  <Nav.Link href="#action3">About</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="projects">Projects</Nav.Link>
+                  <Nav.Link href="about">About</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
