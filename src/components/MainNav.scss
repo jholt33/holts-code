@@ -3,10 +3,16 @@
     box-shadow: 0px 1px 10px #999;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
 .logo-title {
     text-decoration: none;
     font-size: 22px;
     color: black;
+    padding-left: 0.5rem;
     &:hover {
         color: black;
     }

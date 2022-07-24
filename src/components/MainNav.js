@@ -1,3 +1,4 @@
+import { LinkContainer } from "react-router-bootstrap";
 import logo from "../images/fsc-logo-main.svg";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -14,18 +15,18 @@ const MainNav = () => {
         <Navbar key={expand} expand={expand} sticky="top" className="mt-0 mb-3">
           <Container fluid>
             <div className="d-flex align-items-center">
-              <Navbar.Brand href="/">
-                <img
-                  src={logo}
-                  width="50"
-                  height="50"
-                  className="d-inline-block align-top"
-                  alt="Holt's Code Logo"
-                />
-              </Navbar.Brand>
-              <a href="/" className="logo-title">
-                Holt's Code
-              </a>
+              <LinkContainer to="/">
+                <Navbar.Brand>
+                  <img
+                    src={logo}
+                    width="50"
+                    height="50"
+                    className="d-inline-block align-top"
+                    alt="Holt's Code Logo"
+                  />
+                  <span className="logo-title">Holt's Code</span>
+                </Navbar.Brand>
+              </LinkContainer>
             </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -40,9 +41,15 @@ const MainNav = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="projects">Projects</Nav.Link>
-                  <Nav.Link href="about">About</Nav.Link>
+                  <LinkContainer to="/">
+                    <Nav.Link>Home</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/projects">
+                    <Nav.Link>Projects</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/about">
+                    <Nav.Link>About</Nav.Link>
+                  </LinkContainer>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

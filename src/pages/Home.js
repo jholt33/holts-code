@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section>
+    <section className="container">
       <h1>Welcome!</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut
