@@ -1,67 +1,67 @@
-const ProjectItems = [
+const products = [
   {
     id: 1,
-    src: "https://placedog.net/800/640?id=32",
-    title: "Susie",
+    name: "Susie",
+    image: "https://placedog.net/800/640?id=32",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 2,
-    src: "https://placedog.net/800/640?id=100",
-    title: "Jimmy",
+    name: "Jimmy",
+    image: "https://placedog.net/800/640?id=100",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 3,
-    src: "https://placedog.net/800/640?id=69",
-    title: "Hank",
+    name: "Hank",
+    image: "https://placedog.net/800/640?id=69",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 4,
-    src: "https://placedog.net/800/640?id=21",
-    title: "Bosley",
+    name: "Bosley",
+    image: "https://placedog.net/800/640?id=21",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 5,
-    src: "https://placedog.net/800/640?id=22",
-    title: "Frank",
+    name: "Frank",
+    image: "https://placedog.net/800/640?id=22",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 6,
-    src: "https://placedog.net/800/640?id=24",
-    title: "Gloria",
+    name: "Gloria",
+    image: "https://placedog.net/800/640?id=24",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 7,
-    src: "https://placedog.net/800/640?id=60",
-    title: "Robbie",
+    name: "Robbie",
+    image: "https://placedog.net/800/640?id=60",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 8,
-    src: "https://placedog.net/800/640?id=62",
-    title: "Lonnie",
+    name: "Lonnie",
+    image: "https://placedog.net/800/640?id=62",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
   {
     id: 9,
-    src: "https://placedog.net/800/640?id=54",
-    title: "Lady",
+    name: "Lady",
+    image: "https://placedog.net/800/640?id=54",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
   },
 ];
 
-export default ProjectItems;
+export default products;

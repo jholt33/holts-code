@@ -1,8 +1,9 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import ProjectItems from "../ProjectItems";
+import products from "../data";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -18,15 +19,16 @@ const Projects = () => {
         expedita necessitatibus culpa?
       </p>
       <Row>
-        {ProjectItems.map((project) => {
+        {products.map((product) => {
           return (
             <Col md={4}>
-              <Card key={project.id} className="my-3">
-                <Card.Img variant="top" src={project.src} />
+              <Card key={product.id} className="my-3">
+                <Card.Img variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.content}</Card.Text>
+                  <Card.Title>{product.name}</Card.Title>
+                  <Card.Text>{product.content}</Card.Text>
                   <Button>Go somewhere</Button>
+                  <Link to={`/projects/${product.id}`}>more info</Link>
                 </Card.Body>
               </Card>
             </Col>
