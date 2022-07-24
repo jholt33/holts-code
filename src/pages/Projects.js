@@ -1,3 +1,9 @@
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import ProjectItems from "../ProjectItems";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 const Projects = () => {
   return (
     <section className="container">
@@ -11,6 +17,22 @@ const Projects = () => {
         quidem perspiciatis ducimus, dolor consectetur nihil velit natus
         expedita necessitatibus culpa?
       </p>
+      <Row>
+        {ProjectItems.map((project) => {
+          return (
+            <Col md={4}>
+              <Card key={project.id} className="my-3">
+                <Card.Img variant="top" src={project.src} />
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>{project.content}</Card.Text>
+                  <Button>Go somewhere</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
     </section>
   );
 };

@@ -15,18 +15,16 @@ const MainNav = () => {
         <Navbar key={expand} expand={expand} sticky="top" className="mt-0 mb-3">
           <Container fluid>
             <div className="d-flex align-items-center">
-              <LinkContainer to="/">
-                <Navbar.Brand>
-                  <img
-                    src={logo}
-                    width="50"
-                    height="50"
-                    className="d-inline-block align-top"
-                    alt="Holt's Code Logo"
-                  />
-                  <span className="logo-title">Holt's Code</span>
-                </Navbar.Brand>
-              </LinkContainer>
+              <Navbar.Brand href="/">
+                <img
+                  src={logo}
+                  width="50"
+                  height="50"
+                  className="d-inline-block align-top"
+                  alt="Holt's Code Logo"
+                />
+                <span className="logo-title">Holt's Code</span>
+              </Navbar.Brand>
             </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

@@ -3,6 +3,14 @@
     box-shadow: 0px 1px 10px #999;
 }
 
+.nav-link {
+
+    &.active,
+    &:hover {
+        color: #6a8aa7 !important;
+    }
+}
+
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -13,6 +21,7 @@
     font-size: 22px;
     color: black;
     padding-left: 0.5rem;
+
     &:hover {
         color: black;
     }
