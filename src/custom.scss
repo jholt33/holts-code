@@ -1,2 +1,12 @@
 /* import bootstrap to set changes */
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    margin-top: 5rem;
+}

@@ -9,10 +9,10 @@ import "./MainNav.scss";
 
 function MainNav() {
   return (
-    <>
+    <header>
       {/* Set to adjust nav collapse breakpoint */}
       {["sm"].map((expand) => (
-        <Navbar key={expand} expand={expand} sticky="top" className="mt-0 mb-3">
+        <Navbar key={expand} expand={expand} fixed="top" className="mt-0 mb-3">
           <Container fluid>
             <div className="d-flex align-items-center">
               <Navbar.Brand href="/">
@@ -54,7 +54,7 @@ function MainNav() {
           </Container>
         </Navbar>
       ))}
-    </>
+    </header>
   );
 }
 
