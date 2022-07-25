@@ -1,24 +1,16 @@
 import { useParams } from "react-router-dom";
 import products from "../data";
-
-function SingleProject() {
+const SingleProject = () => {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
-  const { name, image, content } = product || {};
-
+  const { image, name, content } = product;
   return (
-    <section className="container">
-      <div>
-        <h1>
-          {name} {productId}
-        </h1>
-      </div>
-      <div>
-        <img src={image} alt={name} />
-        <p>{content}</p>
-      </div>
+    <section>
+      <h1>{name}</h1>
+      <img src={image} alt={name} />
+      <p>{content}</p>
     </section>
   );
-}
+};
 
 export default SingleProject;
