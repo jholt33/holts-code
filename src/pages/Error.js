@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const Error = () => {
+function Error() {
   return (
-    <section className='section'>
-      <h2>404</h2>
-      <p>page not found</p>
-      <Link to='/'>back home</Link>
+    <section className="container my-5">
+      <div className="text-center">
+        <h1>404</h1>
+        <p>Page not found</p>
+        <Link to="/">back home</Link>
+      </div>
     </section>
   );
-};
+}
 export default Error;

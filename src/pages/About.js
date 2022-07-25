@@ -1,6 +1,6 @@
-const About = () => {
+function About() {
   return (
-    <section className="container">
+    <section className="container my-5">
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut
@@ -13,5 +13,5 @@ const About = () => {
       </p>
     </section>
   );
-};
+}
 export default About;

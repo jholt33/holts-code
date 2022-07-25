@@ -1,6 +1,6 @@
-const Home = () => {
+function Home() {
   return (
-    <section className="container">
+    <section className="container my-5">
       <h1>Welcome!</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut
@@ -202,5 +202,5 @@ const Home = () => {
       </p>
     </section>
   );
-};
+}
 export default Home;

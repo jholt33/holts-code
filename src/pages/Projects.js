@@ -8,7 +8,9 @@ import { LinkContainer } from "react-router-bootstrap";
 
 function Projects() {
   return (
-    <section className="container">
+    <section className="container my-5">
+      <h1>Projects</h1>
+      <p>Past and Present Web Projects</p>
       <Row>
         {products.map((product) => {
           return (

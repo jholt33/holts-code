@@ -7,7 +7,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 
 import "./MainNav.scss";
 
-const MainNav = () => {
+function MainNav() {
   return (
     <>
       {/* Set to adjust nav collapse breakpoint */}
@@ -56,6 +56,6 @@ const MainNav = () => {
       ))}
     </>
   );
-};
+}
 
 export default MainNav;
