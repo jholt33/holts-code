@@ -3,9 +3,10 @@ import Card from "react-bootstrap/Card";
 import products from "../data";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 
-const Projects = () => {
+function Projects() {
   return (
     <section className="container">
       <h1>Projects</h1>
@@ -21,14 +22,15 @@ const Projects = () => {
       <Row>
         {products.map((product) => {
           return (
-            <Col md={4}>
-              <Card key={product.id} className="my-3">
+            <Col md={4} key={product.id}>
+              <Card className="my-3">
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body>
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{product.content}</Card.Text>
-                  <Button>Go somewhere</Button>
-                  <Link to={`/projects/${product.id}`}>more info</Link>
+                  <LinkContainer to={`/projects/${product.id}`}>
+                    <Button>Go somewhere</Button>
+                  </LinkContainer>
                 </Card.Body>
               </Card>
             </Col>
@@ -37,5 +39,5 @@ const Projects = () => {
       </Row>
     </section>
   );
-};
+}
 export default Projects;

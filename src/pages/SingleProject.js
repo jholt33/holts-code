@@ -1,12 +1,24 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import products from "../data";
 
-const SingleProject = () => {
+function SingleProject() {
+  const { productId } = useParams();
+  const product = products.find((product) => product.id === productId);
+  const { name, image, content } = product || {};
+
   return (
-    <section>
-      <h5>Hello</h5>
-      <Link to="/projects">back to products</Link>
+    <section className="container">
+      <div>
+        <h1>
+          {name} {productId}
+        </h1>
+      </div>
+      <div>
+        <img src={image} alt={name} />
+        <p>{content}</p>
+      </div>
     </section>
   );
-};
+}
+
 export default SingleProject;
