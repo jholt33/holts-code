@@ -3,6 +3,7 @@ import products from "../data";
 import PageTitle from "../components/PageTitle";
 import { LinkContainer } from "react-router-bootstrap";
 import Button from "react-bootstrap/Button";
+import { FaLink } from "react-icons/fa";
 
 function SingleProject() {
   const { productId } = useParams();
@@ -19,7 +20,7 @@ function SingleProject() {
             <p>{content}</p>
             <hr></hr>
             <div className="d-flex flex-column mb-5">
-              <span className="text-bold">URL:</span>
+              <span className="d-flex align-items-center"><FaLink /><span className="text-bold ps-2">URL:</span></span>
               <a href={projectURL} rel="noreferrer" target="_blank">
                 {projectURL}
               </a>
