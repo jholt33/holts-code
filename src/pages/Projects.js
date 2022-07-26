@@ -1,9 +1,9 @@
+import { LinkContainer } from "react-router-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import products from "../data";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { LinkContainer } from "react-router-bootstrap";
 import PageTitle from "../components/PageTitle";
 
 import "./Projects.scss";
