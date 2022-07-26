@@ -5,6 +5,7 @@ const products = [
     image: "https://placedog.net/800/640?id=32",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Jimmy",
@@ -12,6 +13,7 @@ const products = [
     image: "https://placedog.net/800/640?id=100",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Hank",
@@ -19,6 +21,7 @@ const products = [
     image: "https://placedog.net/800/640?id=69",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Bosley",
@@ -26,6 +29,7 @@ const products = [
     image: "https://placedog.net/800/640?id=21",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Frank",
@@ -33,6 +37,7 @@ const products = [
     image: "https://placedog.net/800/640?id=22",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Gloria",
@@ -40,6 +45,7 @@ const products = [
     image: "https://placedog.net/800/640?id=24",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Robbie",
@@ -47,6 +53,7 @@ const products = [
     image: "https://placedog.net/800/640?id=60",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Lonnie",
@@ -54,6 +61,7 @@ const products = [
     image: "https://placedog.net/800/640?id=62",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
   {
     id: "Lady",
@@ -61,6 +69,7 @@ const products = [
     image: "https://placedog.net/800/640?id=54",
     content:
       "Ea eius ducimus suscipit minima eos saepe sapiente dolores corrupti error.",
+    projectURL: "https://frontsidecode.com",
   },
 ];
 

@@ -1,25 +1,36 @@
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import products from "../data";
 import PageTitle from "../components/PageTitle";
+import { LinkContainer } from "react-router-bootstrap";
+import Button from "react-bootstrap/Button";
 
 function SingleProject() {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
-  const { image, name, content } = product;
+  const { image, name, content, projectURL } = product;
   return (
     <>
-      <PageTitle
-        title={name}
-        activeLink="Projects"
-      />
+      <PageTitle title={name} activeLink={productId} />
       <section className="container my-5">
-        <div className="d-lg-flex align-items-center">
+        <div className="d-xl-flex align-items-start">
           <img className="img-fluid" src={image} alt={name} />
           <div className="d-flex flex-column mx-4 my-4">
-            <h1>{name}</h1>
+            <h2>Project Info:</h2>
             <p>{content}</p>
-            <Link to="/projects">Back to Projects</Link>
+            <hr></hr>
+            <div className="d-flex flex-column mb-5">
+              <span className="text-bold">URL:</span>
+              <a href={projectURL} rel="noreferrer" target="_blank">
+                {projectURL}
+              </a>
+            </div>
+            <LinkContainer to="/projects">
+              <div className="text-left">
+                <Button variant="primary" size="lg">
+                  Back to Projects
+                </Button>
+              </div>
+            </LinkContainer>
           </div>
         </div>
       </section>
