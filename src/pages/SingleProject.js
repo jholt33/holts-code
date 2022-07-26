@@ -19,7 +19,7 @@ function SingleProject() {
             <h2>Project Info:</h2>
             <p>{content}</p>
             <hr></hr>
-            <div className="d-flex flex-column mb-5">
+            <div className="d-flex justify-content-between mb-5">
               <span className="d-flex align-items-center"><FaLink /><span className="text-bold ps-2">URL:</span></span>
               <a href={projectURL} rel="noreferrer" target="_blank">
                 {projectURL}
