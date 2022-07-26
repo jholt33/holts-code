@@ -16,12 +16,16 @@ function Projects() {
           return (
             <Col md={4} key={product.id}>
               <Card className="my-3">
-                <Card.Img variant="top" src={product.image} />
+                <LinkContainer to={`/projects/${product.id}`}>
+                  <Card.Img variant="top" src={product.image} />
+                </LinkContainer>
                 <Card.Body>
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{product.content}</Card.Text>
                   <LinkContainer to={`/projects/${product.id}`}>
-                    <Button>Go somewhere</Button>
+                    <div className="text-center">
+                    <Button variant="outline-primary" size="lg">View More</Button>
+                    </div>
                   </LinkContainer>
                 </Card.Body>
               </Card>
