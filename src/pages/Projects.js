@@ -11,7 +11,7 @@ import "./Projects.scss";
 function Projects() {
   return (
     <>
-      <PageTitle title="Projects" subtitle="Past and Present Web Projects" />
+      <PageTitle title="Projects" subtitle="Past and Present Web Projects" activeLink="Projects" />
       <section className="container my-5">
         <Row>
           {products.map((product) => {
