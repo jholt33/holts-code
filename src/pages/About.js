@@ -3,10 +3,7 @@ import PageTitle from "../components/PageTitle";
 function About() {
   return (
     <>
-      <PageTitle
-        title="About"
-        activeLink="About"
-      />
+      <PageTitle title="About" />
       <section className="container my-5">
         <h1>Page Title</h1>
         <p>

@@ -11,7 +11,7 @@ import "./Projects.scss";
 function Projects() {
   return (
     <>
-      <PageTitle title="Projects" subtitle="Past and Present Web Projects" activeLink="Projects" />
+      <PageTitle title="Projects" subtitle="Past and Present Web Projects" />
       <section className="container my-5">
         <Row>
           {projects.map((project) => {
@@ -26,9 +26,7 @@ function Projects() {
                     <Card.Text>{project.content}</Card.Text>
                     <LinkContainer to={`/projects/${project.id}`}>
                       <div className="text-center">
-                        <Button size="lg">
-                          View More
-                        </Button>
+                        <Button size="lg">View More</Button>
                       </div>
                     </LinkContainer>
                   </Card.Body>

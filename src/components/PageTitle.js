@@ -1,10 +1,7 @@
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import { LinkContainer } from "react-router-bootstrap";
-
+import Breadcrumbs from "./Breadcrumbs";
 import "./PageTitle.scss";
 
 function PageTitle(props) {
-
   return (
     <section id="page-title">
       <div className="container d-lg-flex flex-wrap align-items-center">
@@ -13,12 +10,7 @@ function PageTitle(props) {
           <p>{props.subtitle}</p>
         </div>
         <div className="ms-lg-auto">
-          <Breadcrumb>
-            <LinkContainer to="/">
-              <Breadcrumb.Item>Home</Breadcrumb.Item>
-            </LinkContainer>
-            <Breadcrumb.Item active>{props.activeLink}</Breadcrumb.Item>
-          </Breadcrumb>
+          <Breadcrumbs />
         </div>
       </div>
     </section>

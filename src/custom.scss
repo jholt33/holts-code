@@ -1,6 +1,6 @@
 $theme-colors: (
-  "primary": #6a88a7,
-  "secondary": #333,
+    "primary": #6a88a7,
+    "secondary": #333,
 );
 
 /* import bootstrap to set changes */
@@ -21,13 +21,16 @@ main {
 
 a {
     color: $primary;
+
     &:hover {
         color: $secondary;
     }
 }
 
-.btn, .btn-primary {
+.btn,
+.btn-primary {
     color: white;
+
     &:hover {
         color: white;
     }
@@ -49,8 +52,8 @@ h2 {
 
 .breadcrumb-item {
     &.active {
-        color: $secondary;
         a {
+            color: $secondary;
             text-decoration: none;
             cursor: auto;
         }
