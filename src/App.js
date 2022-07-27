@@ -19,7 +19,7 @@ function App() {
 
           <Route path="projects" element={<SingleProjectLayout />}>
             <Route index element={<Projects />} />
-            <Route path=":productId" element={<SingleProject />} />
+            <Route path=":projectId" element={<SingleProject />} />
           </Route>
 
           <Route path="*" element={<Error />} />

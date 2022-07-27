@@ -1,17 +1,17 @@
 import { useParams } from "react-router-dom";
-import products from "../data";
+import projects from "../data";
 import PageTitle from "../components/PageTitle";
 import { LinkContainer } from "react-router-bootstrap";
 import Button from "react-bootstrap/Button";
 import { FaLink, FaAngleLeft} from "react-icons/fa";
 
 function SingleProject() {
-  const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
-  const { image, name, content, projectURL } = product;
+  const { projectId } = useParams();
+  const project = projects.find((project) => project.id === projectId);
+  const { image, name, content, projectURL } = project;
   return (
     <>
-      <PageTitle title={name} activeLink={productId} />
+      <PageTitle title={name} activeLink={projectId} />
       <section className="container my-5">
         <div className="row">
           <div className="col-12 col-lg-8">

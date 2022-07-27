@@ -1,4 +1,4 @@
-const products = [
+const projects = [
   {
     id: "Susie",
     name: "Susie",
@@ -73,4 +73,4 @@ const products = [
   },
 ];
 
-export default products;
+export default projects;
