@@ -26,7 +26,7 @@ function Projects() {
                     <Card.Text>{product.content}</Card.Text>
                     <LinkContainer to={`/projects/${product.id}`}>
                       <div className="text-center">
-                        <Button variant="outline-primary" size="lg">
+                        <Button size="lg">
                           View More
                         </Button>
                       </div>

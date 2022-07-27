@@ -1,16 +1,6 @@
 #page-title {
     position: relative;
     padding: 50px 0;
-    background-color: #cdcdcd;
+    background-color: #f5f5f5;
     border-bottom: 1px solid #EEE;
-}
-
-.breadcrumb-item {
-    &.active {
-        a {
-            color: #21252a;
-            text-decoration: none;
-            cursor: auto;
-        }
-    }
 }

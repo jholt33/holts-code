@@ -1,5 +1,13 @@
+$theme-colors: (
+  "primary": #6a88a7,
+  "secondary": #333,
+);
+
 /* import bootstrap to set changes */
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary: #6a88a7;
+$secondary: #333;
 
 #root {
     display: flex;
@@ -11,16 +19,40 @@ main {
     margin-top: 5rem;
 }
 
+a {
+    color: $primary;
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.btn, .btn-primary {
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+
 h1 {
     margin-bottom: 0;
 }
 
 h2 {
     padding: 0 0 1rem;
-    border-bottom: 2px solid #6a88a7;
+    border-bottom: 2px solid $primary;
     margin-bottom: 1rem;
 }
 
 .text-bold {
     font-weight: bold;
+}
+
+.breadcrumb-item {
+    &.active {
+        color: $secondary;
+        a {
+            text-decoration: none;
+            cursor: auto;
+        }
+    }
 }
