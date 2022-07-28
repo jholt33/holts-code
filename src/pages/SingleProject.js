@@ -12,12 +12,12 @@ function SingleProject() {
   const { image, name, content, projectURL } = project;
   return (
     <>
-      <PageTitle title={name} activeLink={projectId} />
+      <PageTitle title={name} />
       <section className="container my-5">
         <div className="row">
           <div className="col-12 col-lg-8">
             <Animated
-              animationIn="fadeInLeft"
+              animationIn="fadeIn"
               animationOut="fadeOut"
               animationInDuration={1000}
               isVisible={true}
@@ -27,7 +27,7 @@ function SingleProject() {
           </div>
           <div className="col-12 col-lg-4">
             <Animated
-              animationIn="fadeInUp"
+              animationIn="fadeIn"
               animationOut="fadeOut"
               animationInDuration={1000}
               isVisible={true}
@@ -52,7 +52,7 @@ function SingleProject() {
                       className="d-flex align-items-center"
                       size="lg"
                     >
-                      <FaAngleLeft className="me-2" /> Back to Projects
+                      <FaAngleLeft className="me-2" />Back to Projects
                     </Button>
                   </div>
                 </LinkContainer>
