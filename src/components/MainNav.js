@@ -13,7 +13,8 @@ function MainNav() {
       <Navbar collapseOnSelect expand="md" fixed="top">
         <Container fluid>
           <div className="d-flex align-items-center">
-            <Navbar.Brand href="/">
+          <LinkContainer to="/">
+            <Navbar.Brand>
               <img
                 src={logo}
                 width="50"
@@ -23,12 +24,13 @@ function MainNav() {
               />
               <span className="logo-title">Holt's Code</span>
             </Navbar.Brand>
+            </LinkContainer>
           </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <LinkContainer to="/">
-                <Nav.Link>
+                <Nav.Link active={false}>
                   <span className="d-flex align-items-center">
                     <FaHome />
                     <span className="text-bold ps-2">Home</span>
@@ -36,7 +38,7 @@ function MainNav() {
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/projects">
-                <Nav.Link>
+                <Nav.Link active={false}>
                   <span className="d-flex align-items-center">
                     <FaBriefcase />
                     <span className="text-bold ps-2">Projects</span>
@@ -44,7 +46,7 @@ function MainNav() {
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Link>
+                <Nav.Link active={false}>
                   <span className="d-flex align-items-center">
                     <FaUserTie />
                     <span className="text-bold ps-2">About</span>
