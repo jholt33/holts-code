@@ -23,7 +23,7 @@ function MainNav() {
                 alt="Adopt a Dog Logo"
               /> */}
               <FaDog className="site-logo" />
-              <span className="logo-title">Adopt A Dog</span>
+              <span className="logo-title">Meet A Dog</span>
             </Navbar.Brand>
             </LinkContainer>
           </div>
