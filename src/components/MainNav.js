@@ -1,9 +1,9 @@
 import { LinkContainer } from "react-router-bootstrap";
-import logo from "../images/fsc-logo-main.svg";
+// import logo from "../images/fsc-logo-main.svg";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaHome, FaUserTie, FaBriefcase } from "react-icons/fa";
+import { FaHome, FaDog, FaBone, FaBaseballBall } from "react-icons/fa";
 
 import "./MainNav.scss";
 
@@ -15,14 +15,15 @@ function MainNav() {
           <div className="d-flex align-items-center">
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img
+              {/* <img
                 src={logo}
                 width="50"
                 height="50"
                 className="d-inline-block align-top"
-                alt="Holt's Code Logo"
-              />
-              <span className="logo-title">Holt's Code</span>
+                alt="Adopt a Dog Logo"
+              /> */}
+              <FaDog className="site-logo" />
+              <span className="logo-title">Adopt A Dog</span>
             </Navbar.Brand>
             </LinkContainer>
           </div>
@@ -37,18 +38,18 @@ function MainNav() {
                   </span>
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/projects">
+              <LinkContainer to="/dogs">
                 <Nav.Link active={false}>
                   <span className="d-flex align-items-center">
-                    <FaBriefcase />
-                    <span className="text-bold ps-2">Projects</span>
+                    <FaBone />
+                    <span className="text-bold ps-2">Meet the Dogs</span>
                   </span>
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
                 <Nav.Link active={false}>
                   <span className="d-flex align-items-center">
-                    <FaUserTie />
+                    <FaBaseballBall />
                     <span className="text-bold ps-2">About</span>
                   </span>
                 </Nav.Link>

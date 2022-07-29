@@ -12,7 +12,7 @@ import "./Projects.scss";
 function Projects() {
   return (
     <>
-      <PageTitle title="Projects" subtitle="Past and Present Web Projects" />
+      <PageTitle title="Meet the Dogs" subtitle="Learn more below about your new best friend!" />
       <section className="container my-5">
         <Row>
           {projects.map((project) => {
@@ -24,13 +24,13 @@ function Projects() {
                   animationInDuration={1000}
                   isVisible={true}
                 >
-                  <LinkContainer to={`/projects/${project.id}`}>
+                  <LinkContainer to={`/dogs/${project.id}`}>
                     <Card className="my-3">
                       <Card.Img variant="top" src={project.image} />
                       <Card.Body className="px-4">
                         <Card.Title>{project.name}</Card.Title>
                         <Card.Text>{project.content}</Card.Text>
-                        <LinkContainer to={`/projects/${project.id}`}>
+                        <LinkContainer to={`/dogs/${project.id}`}>
                           <div className="text-center">
                             <Button size="lg">View More</Button>
                           </div>

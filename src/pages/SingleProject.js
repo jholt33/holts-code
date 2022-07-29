@@ -33,7 +33,7 @@ function SingleProject() {
               isVisible={true}
             >
               <div className="mt-3 mt-lg-0">
-                <h2>Project Info:</h2>
+                <h2>Meet {name}!</h2>
                 <p>{content}</p>
                 <hr></hr>
                 <div className="d-flex justify-content-between mb-5">
@@ -45,14 +45,14 @@ function SingleProject() {
                     {projectURL}
                   </a>
                 </div>
-                <LinkContainer to="/projects">
+                <LinkContainer to="/dogs">
                   <div className="text-left">
                     <Button
                       variant="primary"
                       className="d-flex align-items-center"
                       size="lg"
                     >
-                      <FaAngleLeft className="me-2" />Back to Projects
+                      <FaAngleLeft className="me-2" />Back to the Dogs
                     </Button>
                   </div>
                 </LinkContainer>
