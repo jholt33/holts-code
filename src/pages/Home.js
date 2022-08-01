@@ -1,5 +1,7 @@
 import { Animated } from "react-animated-css";
 
+import "./Home.scss";
+
 function Home() {
   return (
     <Animated
@@ -8,6 +10,9 @@ function Home() {
       animationInDuration={1000}
       isVisible={true}
     >
+      <div className="homepg-hdr">
+        <img className="img-fluid" src="https://placedog.net/800/640?id=69" alt="home img" />
+      </div>
       <section className="container my-5">
         <h1>Welcome!</h1>
         <p>
