@@ -6,6 +6,21 @@ $theme-colors: (
 /* import bootstrap to set changes */
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
 
 $primary: #6a88a7;
 $secondary: #333;
@@ -39,16 +54,18 @@ a {
 
 h1 {
     margin-bottom: 0;
+    font-weight: 700;
 }
 
 h2 {
     padding: 0 0 1rem;
     border-bottom: 2px solid $primary;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .text-bold {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .breadcrumb-item {

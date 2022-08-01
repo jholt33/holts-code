@@ -1,8 +1,6 @@
 import PageTitle from "../components/PageTitle";
 import ProjectCards from "../components/ProjectCards";
 
-import "./Projects.scss";
-
 function Projects() {
   return (
     <>
