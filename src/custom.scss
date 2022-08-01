@@ -7,6 +7,7 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 body {
   margin: 0;
@@ -36,8 +37,9 @@ main {
 }
 
 a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: $primary;
-
     &:hover {
         color: $secondary;
     }
@@ -53,19 +55,19 @@ a {
 }
 
 h1 {
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 0;
-    font-weight: 700;
 }
 
 h2 {
+    font-family: 'Raleway', sans-serif;
     padding: 0 0 1rem;
     border-bottom: 2px solid $primary;
     margin-bottom: 1rem;
-    font-weight: 700;
 }
 
 .text-bold {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .breadcrumb-item {
